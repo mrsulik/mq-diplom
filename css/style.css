@@ -1149,7 +1149,7 @@ li {
     }
 
     .about-text {
-        width: 391px;
+        width: 390px;
         
     }
 
@@ -1483,6 +1483,7 @@ li {
         width: 100%;
         padding: 0;
         line-height: 1.1;
+        letter-spacing: 0;
     }
 
     .news-link {
