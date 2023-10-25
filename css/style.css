@@ -38,6 +38,7 @@ a {
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-position-y: -2px;
     background-size: cover;
     background-color: #000000;
     position: relative;
@@ -60,9 +61,11 @@ a {
 }
 
 .menu {
+    width: 1183px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .header-logo {
@@ -75,7 +78,7 @@ a {
 }
 
 .header-menu {
-    margin: 0;
+    margin: 0 1px 2px 0;
     box-sizing: border-box;
 }
 
@@ -83,7 +86,7 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
-    margin: -11px -18px;
+    margin: 0;
 }
 
 .menu-list-item{
@@ -122,7 +125,8 @@ a {
 /* PAGE */
 
 .page-trends {
-    width: 100%;
+    width: 1660px;
+    margin: auto;
 }
 
 .caption-line {
@@ -645,12 +649,11 @@ a {
 
 .subtitle {
     display: flex;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 20px;
     font-family: open-sans-b, sans-serif;
     text-transform: uppercase;
     color: #0f0d0e;
-    margin: 28px 0px 0 19px
+    margin: 50px 0px 18px 19px;
 }
 
 .subtitle:hover {
@@ -687,7 +690,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -1067,10 +1070,15 @@ li {
         margin: 50px 35px; 
     }
 
+    .page-trends {
+        width: 100%;
+    }
+    
     .caption-line {
         margin-bottom: -8px;
     
     }
+
     .trend-title {
         font-size: 18px;
         margin-top: 69px;
@@ -1265,8 +1273,8 @@ li {
     }
 
     .product-content {
-        width: calc(50% - 55px) ;
-        margin: 19px 5px 5px 3px;
+        width: calc(50% - 55px);
+        margin: 21px 5px 5px 3px;
         flex-grow: 0;
     }
 
@@ -1276,12 +1284,12 @@ li {
 
     .product-title {
         width: 333px;
-        margin-top: -35px;
+        margin-top: -40px;
     }
 
     .subtitle {
-        margin: 32px 0px 30px 20px;
-        font-size: 15px;
+        margin: 50px 0px 46px 20px;
+        font-size: 17px;
     }
 
     .product-description {
@@ -1293,7 +1301,11 @@ li {
     }
 
     .product-price-old {
-        margin: 0;
+        margin: 0 0 -5px 0;
+    }
+
+    .product-footer {
+        margin-bottom: 30px;
     }
 
     .footer {
@@ -1306,7 +1318,7 @@ li {
         margin-top: 40px;
         margin-left: 20px;
         padding: 0;
-        margin: 42px 20px;
+        margin: 44px 20px;
     }
 
     .footer-address {
@@ -1386,6 +1398,10 @@ li {
     .full-page {
         display: flex;
         flex-direction: column;
+    }
+
+    .page-trends {
+        width: 100%;
     }
   
     .trend-title {
@@ -1679,14 +1695,14 @@ li {
     }
   
     .product-description {
-        margin: 8px 0 0px -15px;
+        margin: 5px 0 0px -15px;
     }
 
     .product-title {
         width: calc(100% - 35px);
         padding: 10px 10px 10px 30px;
         box-sizing: border-box;
-        margin: -35px 2px 25px 1px;
+        margin: -35px 2px 25px 0px;
     }
 
     .product-title-text {
@@ -1699,17 +1715,13 @@ li {
     }
 
     .subtitle {
-        margin: 40px 0 -3px -15px;
-        font-size: 14.5px;
-    }
-
-    .subtitle-header {
-        margin: 0;
+        margin: 41px 0 0 -15px;
+        font-size: 17px;
     }
 
 
     .product-footer {
-        margin: 20px 11px 15px -15px;
+        margin: 20px 11px 14px -15px;
     }
 
     .product-prices {
@@ -1717,11 +1729,11 @@ li {
     }
 
     .product-price-new {
-        margin: 0 0 4px 0;
+        margin: 0 0 6px 0;
     }
 
     .product-price-old {
-        margin: 0px 0 1px 0;
+        margin: 0;
     }
 
     .product-button {
@@ -1766,8 +1778,6 @@ li {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* margin: 0; */
-        /* width: calc((100% / 2) - 5px); */
     }
 
     .title-content {
