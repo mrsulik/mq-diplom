@@ -68,7 +68,7 @@
             <div class="caption-line">
                 <h2 class="trend-title">Сейчас в тренде</h2>
             </div>
-            <section class="trend-container">
+            <div class="trend-container">
                 <div class="trend-content picture1">
                     <article class="title-content">
                         <ul class="trend-teg">
@@ -80,7 +80,7 @@
                             </li>
                         </ul>
                         <h3 class="gallery-texts">
-                            <a href="#0" class="gallery-text">сейчас в тренде: сад  &#160; &#160; &#160; &#160; &#160; &#160; &#160;<br /> на подоконнике</a></h3>
+                            <a href="#0" class="gallery-text">сейчас в тренде: сад  &#160; &#160; &#160; &#160; &#160; &#160; &#160; <br/> на подоконнике</a></h3>
                     </article>
                 </div>
                 <div class="trend-content picture2">
@@ -122,7 +122,7 @@
                             <a href="#" class="gallery-text"> &#160;сейчас в тренде: сколько  &#160;витамина c в лимонах?</a></h3>
                     </article>
                 </div>
-            </section>
+            </div>
         </aside>
 
         <!-- PAGE -->
@@ -257,7 +257,7 @@
                                 <div class="author">Неизвестный автор</div>
                             </div>
                             <div class="about">
-                                <p class="about-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+                                <p class="about-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется &#160 чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
                             </div>
                         </div>
                     </div>
@@ -326,7 +326,7 @@
                     <form class="search">
                         <label class="search-group">
                             <span class="hidden">Поле ввода</span>
-                            <input class="search-field" placeholder="Найти..." alt="поле поиска">
+                            <input type="text" class="search-field" placeholder="Найти..." alt="поле поиска" />
                         </label>
                         <button class="search-button">
                             <span class="hidden">Кнопка поиска</span>
@@ -409,7 +409,7 @@
                         <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
                         <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet1.jpg">
                         <source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
-                        <img class="product-img" src="img/shop-item-desk1.jpg">
+                        <img class="product-img" src="img/shop-item-desk1.jpg" alt="подушка на стуле" />
                     </picture>
                     <div class="product-title">
                             <h3 class="subtitle">Подушки на диван</h3>
@@ -440,7 +440,7 @@
                         <source media="(min-width: 1220px)" srcset="img/shop-item-desk2.jpg">
                         <source media="(min-width: 641px) and (max-width : 1199px)" srcset="img/shop-item-tablet2.jpg">
                         <source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
-                        <img class="product-img" src="img/shop-item-desk2.jpg">
+                        <img class="product-img" src="img/shop-item-desk2.jpg" alt="кукла зайчик"/>
                     </picture>
 
                     <div class="product-title">
@@ -464,7 +464,7 @@
                         <source media="(min-width: 1220px)" srcset="img/shop-item-desk3.jpg">
                         <source media="(min-width: 641px) and (max-width : 1199px)" srcset="img/shop-item-tablet3.jpg">
                         <source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
-                        <img class="product-img" src="img/shop-item-desk3.jpg">
+                        <img class="product-img" src="img/shop-item-desk3.jpg" alt="шестиугольная рамка"/>
                     </picture>
 
                     <div class="product-title">
@@ -523,47 +523,47 @@
 
     <!-- POPUP -->
 
-    <div class="popup-overlay">
-        <div class="popup">
-            <section class="popup-content">
-                <label for="popup" class="popup-close">
-                    <img class="popup-svg" src="svg/form-x.svg" alt="Крестик">
-                </label>
-                <h2 class="popup-title">Ваш фидбек</h2>
-                <form class="form">
-                    <label class="select-group">
-                        <span class="form-hint">Как часто вы заходите на сайт?</span>
-                        <select class="select">
-                            <option value="Почти каждый день" selected>Почти каждый день</option>
-                            <option value="каждый день">Каждый день</option>
-                            <option value="Раз в неделю">Раз в неделю</option>
-                            <option value="Раз в месяц">Раз в месяц</option>
-                        </select>
-                        <img class="form-arrows" src="svg/form-arrows.svg" alt="form-arrows">
-                    </label>
-                    <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-                    <div class="radio-box">
-                        <label class="checkbox-group">
-                            <input type="radio" class="checkbox" name="answer" checked>
-                            <img class="radio-svg checked" src="svg/form-empty-circle.svg" alt="circle">
-                            <span class="checkbox-text">Да</span>
+    <div class="popup-hidden">
+        <div class="popup-overlay">
+            <div class="popup">
+                <section class="popup-content">
+                    <button for="popup" class="popup-close">
+                        <img class="popup-svg" src="svg/form-x.svg" alt="Крестик">
+                    </button>
+                    <h2 class="popup-title">Ваш фидбек</h2>
+                    <form class="form">
+                        <label class="select-group">
+                            <span class="form-hint">Как часто вы заходите на сайт?</span>
+                            <select class="select">
+                                <option value="Почти каждый день" selected>Почти каждый день</option>
+                                <option value="каждый день">Каждый день</option>
+                                <option value="Раз в неделю">Раз в неделю</option>
+                                <option value="Раз в месяц">Раз в месяц</option>
+                            </select>
+                            <img class="form-arrows" src="svg/form-arrows.svg" alt="form-arrows">
                         </label>
-                        <label class="checkbox-group">
-                            <input type="radio" class="checkbox" name="answer">
-                            <img class="radio-svg empty" src="svg/form-empty-circle.svg" alt="circle">
-                            <span class="checkbox-text">Нет</span>
+                        <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+                        <div class="radio-box">
+                            <label class="checkbox-group">
+                                <input type="radio" class="checkbox" name="answer" checked>
+                                <img class="radio-svg checked" src="svg/form-empty-circle.svg" alt="circle">
+                                <span class="checkbox-text">Да</span>
+                            </label>
+                            <label class="checkbox-group">
+                                <input type="radio" class="checkbox" name="answer">
+                                <img class="radio-svg empty" src="svg/form-empty-circle.svg" alt="circle">
+                                <span class="checkbox-text">Нет</span>
+                            </label>
+                        </div>
+                        <label class="field-group">
+                            <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                            <textarea class="textarea" placeholder="Может,больше рецептов?" required></textarea>
                         </label>
-                    </div>
-
-                    <label class="field-group">
-                        <span class="form-hint">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
-                        <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
-                    </label>
-                    <button class="button-form" type="reset">Отправить</button>
-                </form>
-            </section>
+                        <button class="button-form" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
         </div>
-
     </div>
 </body>
 

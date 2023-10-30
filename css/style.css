@@ -61,7 +61,8 @@ a {
 }
 
 .menu {
-    width: 1183px;
+    width: 100%;
+    max-width: 1183px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +71,6 @@ a {
 
 .header-logo {
     margin: 0;
-
 }
 
 .hamburger-menu {
@@ -78,7 +78,7 @@ a {
 }
 
 .header-menu {
-    margin: 0 1px 2px 0;
+    margin: 0 -18px 2px 0;
     box-sizing: border-box;
 }
 
@@ -125,7 +125,7 @@ a {
 /* PAGE */
 
 .page-trends {
-    width: 1660px;
+    /* width: 1660px; */
     margin: auto;
 }
 
@@ -810,8 +810,11 @@ li {
 
 /* POPUP */
 
-.popup-overlay {
+.popup-hidden {
     display: none;
+}
+
+.popup-overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -825,33 +828,40 @@ li {
 }
   
 .popup {
-    display: none;
     color: #fff;
     width: 100%;
     max-width: 390px;
-    padding: 40px 30px;
+    padding: 0px 30px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -220px;
-    margin-top: -350px;
-    text-align: center;
+    top: 24%;
+    left: 37%;
+    margin-left: -4px;
+    margin-top: 3px;
+    text-align: center
 }
   
 .popup-content {
-    width: 320px;
+    width: 330px;
+    height: 527px;
     border: 1px solid #000000;
-    padding: 54px 30px;
+    padding: 30px 30px;
     background-color: #ffffff;
-    margin-top: 100px;
+    margin-top: 0;
     position: relative;
+    margin-left: -5px;
 }
   
 .popup-close {
+
     position: absolute;
-    right: 5px;
+    right: -3px;
     top: -30px;
     cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }
   
 .popup-svg {
@@ -878,36 +888,40 @@ li {
 }
   
 .form {
-    margin-top: 30px;
+    margin-top: 25px;
 }
   
 .form-hint {
     display: block;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: -4px;
     font-size: 13px;
     font-family: open-sans-r, sans-serif;
     font-weight: 400;
     color: #0f0d0e;
+    margin-left: 0;
+    margin-top: 27px;
+    margin-right: 10px;
 }
   
 .select {
     display: inline-block;
     width: 100%;
     height: 50px;
-    padding-left: 10px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
     background-color: #f3f7f6;
-    margin-bottom: 40px;
+    margin-bottom: 4px;
     cursor: pointer;
     font-size: 13px;
     font-weight: 400;
-    position: relative; 
+    position: relative;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
+    margin-top: 10px;
 }
   
 .select:focus {
@@ -919,8 +933,8 @@ li {
     height: 15px;
     position: absolute;
     z-index: 5;
-    margin-top: 18px;
-    margin-left: -20px;
+    margin-top: 30px;
+    margin-left: -23px;
 }
 
 .checkbox {
@@ -932,7 +946,7 @@ li {
   
 .checkbox-text {
     display: block;
-    font-size: 1em;
+    font-size: 13px;
     font-weight: 400;
     color: #0f0d0e;
     margin-bottom: 10px;
@@ -940,7 +954,7 @@ li {
   
 .radio-box {
     display: flex;
-    margin-bottom: 20px;
+    margin: 0;
 }
   
 .checkbox-group {
@@ -948,6 +962,7 @@ li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 14px -10px -4px -6px;
 }
   
 .checkbox-group:nth-child(2n) {
@@ -976,23 +991,24 @@ li {
 }
   
 .textarea {
-    width: 100%;
-    height: 130px;
+    width: 93%;
+    height: 110px;
     background-color: #f3f7f6;
-    padding-left: 10px;
-    padding-top: 15px;
-    font-size: 0.875em;
+    padding-left: 20px;
+    padding-top: 19px;
+    font-size: 14px;
     font-weight: 400;
     resize: none;
     outline: none;
     overflow: auto;
     border: none;
     cursor: pointer;
+    margin: 13px 0 -5px 0;
 }
   
 .button-form {
     display: block;
-    margin-top: 30px;
+    margin-top: 31px;
     background-color: #b59f5b;
     width: 100%;
     height: 50px;
@@ -1160,7 +1176,7 @@ li {
     }
 
     .about-text {
-        width: 390px;
+        width: 391px;
         
     }
 
@@ -1344,6 +1360,60 @@ li {
     .social-icon_tumblr {
         background-image: url(../svg/003-tumblr.svg);
     }
+
+    .popup {
+        top: 23%;
+        left: 21%;
+        margin-left: 3px;
+        margin-top: 6px;
+    }
+
+    .popup-title {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .popup-content {
+        width: 329px;
+        height: 536px;
+    }
+
+    .popup-close {
+        right: 2px;
+        top: -36px;
+    }
+
+    .popup-svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .form-arrows {
+        margin-top: 30px;
+        margin-left: -25px;
+    }
+
+    .form-hint {
+        margin: 27px 0 -4px -2px;
+        padding-right: 10px;
+    }
+
+    .radio-box {
+        margin-bottom: -6px;
+    }
+
+    .checkbox-group {
+        margin: 15px 7px 0 -9px;
+    }
+
+    .checkbox:checked + .checked {
+        background-size: 25px;
+    }
+
+    .radio-svg {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 /* MOBILE */
@@ -1364,6 +1434,7 @@ li {
   
     .menu {
         justify-content: flex-end;
+        width: 100%;
     }
     
     .header-menu {
@@ -1771,7 +1842,90 @@ li {
         height: 19px;
         margin: 0;
     }
-  }
+    
+    .popup {
+        top: 8%;
+        left: 0%;
+        margin-left: -11px;
+        margin-top: 4px;
+    }
+
+    .popup-content {
+        width: 271px;
+        height: 484px;
+        border: 1px solid #000000;
+        padding: 30px 30px;
+        background-color: #ffffff;
+        margin-top: 0;
+        position: relative;
+        margin-left: -5px;
+    }
+
+    .popup-close {
+        right: 0px;
+        top: -35px;
+    }
+
+    .popup-svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup-title {
+        font-size: 16px;
+        margin: -5px 2px 0 0;
+    }
+
+    .popup-title::after {
+        margin-bottom: 27px;
+    }
+
+    .form-hint {
+        margin-left: -6px;
+    }
+
+    .select {
+        margin: 11px 0 4px -8px;
+    }
+
+    .form-arrows {
+        width: 10px;
+        height: 15px;
+        margin-top: 30px;
+        margin-left: -17px;
+    }
+
+    .radio-box {
+        margin: 0;
+    }
+
+    .checkbox-group {
+        margin: 13px 6px -4px -13px;
+    }
+
+    .checkbox:checked + .checked {
+        background-size: 25px;
+    }
+
+    .radio-svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .textarea {
+        margin: 12px 0px -5px -5px;
+    }
+
+    .button-form {
+        margin-top: 31px;
+        margin-left: -6px;
+        width: 103%;
+        height: 48px;
+     
+    }
+}
 
   @media (max-width: 640px) and (orientation: landscape) {
     .trend-container {
