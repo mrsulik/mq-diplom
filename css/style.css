@@ -805,7 +805,12 @@ li {
     font-family: open-sans-b, sans-serif;
     font-size: 12px;
     text-align: center;
-    margin: 60px;
+    /* margin: 0; */
+}
+
+.copyright-text {
+    margin-top: 70px;
+    margin-left: 12px;
 }
 
 /* POPUP */
@@ -1361,6 +1366,11 @@ li {
         background-image: url(../svg/003-tumblr.svg);
     }
 
+    .copyright-text {
+        margin-top: 48px;
+        margin-left: 12px;
+    }
+
     .popup {
         top: 23%;
         left: 21%;
@@ -1841,6 +1851,11 @@ li {
         width: 19px;
         height: 19px;
         margin: 0;
+    }
+
+    .copyright-text {
+        margin-top: 46px;
+        margin-left: 10px;
     }
     
     .popup {
